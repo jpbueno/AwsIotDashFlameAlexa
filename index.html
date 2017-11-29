@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AWS IoT - Flame Demo</title>
+  <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.min.css" media="screen">
+</head>
+
+<body style="background: black;">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <div style="background: black; width: 100%; height:100%;">
+    <div class="container">
+      <div class="span12 text-center pagination-centered">
+        <canvas id="mycanvas" width="200px" height="250px"></canvas>
+      </div>
+      <div class="span12 text-center">
+        <img style="width: 200px;" src="torch_rio4.png"></img>
+      </div>
+    <div>
+      <p id="infoLabel" align="center" style="top:-15vh; height: 5vh; font-size:5vh; color:white; font-family:arial">Conectado!</p>
+    </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/json2.js"></script>
+  <script type="text/javascript" src="js/lib/jstorage.min.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./index_files/aws-sdk-2.2.35.min.js"></script>
+  <script type="text/javascript" src="./index_files/amazon-cognito.min.js"></script>
+  <script type="text/javascript" src="js/class.js"></script>
+  <script type="text/javascript" src="js/underscorec.js"></script>
+  <script type="text/javascript" src="js/helpers.js"></script>
+  <script type="text/javascript" src="js/marchingsquares.js"></script>
+  <script type="text/javascript" src="js/objects/sky.js"></script>
+  <script type="text/javascript" src="js/objects/firems.js"></script>
+  <script type="text/javascript" src="js/domutil.js"></script>
+  <script type="text/javascript" src="js/scene.js"></script>
+  <script type="text/javascript" src="js/frameloop.js"></script>
+  <script type="text/javascript" src="js/firesimulation.js"></script>
+  <script type="text/javascript" src="./index_files/lightbulb.js"></script>
+  <script type="text/javascript" src="./index_files/mqttws31.js"></script>
+  <script type="text/javascript" src="./index_files/websocket.js"></script>
+  <script type="text/javascript">
+    main("mycanvas");
+  </script>
+</body>
+
+</html>

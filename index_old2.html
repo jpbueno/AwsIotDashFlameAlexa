@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Canvas Fire Simulation</title>
+<link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.min.css" media="screen">
+<meta name="author" content="Christer Bystrom">
+
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div style="background: black; width: 100%;">
+    <div class="container">
+            <canvas id="mycanvas" width="200px" height="250px"></canvas>
+        <div style="width: 200px;"><img style="width: 180px;" src="torch_2.png"></img></div>
+
+            <h2>Simulation options</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button id="firebutton" class="btn btn-danger">Fire!</button>
+                    <input type="text" id="fireqty" value="10">
+                </li>
+            </ul>
+
+        <footer>
+          <p>&copy; Christer Bystr&ouml;m 2013</p>
+        </footer>
+      </div>
+    </div>
+
+
+</div>
+</div>
+
+</div>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/json2.js"></script>
+<script type="text/javascript" src="js/lib/jstorage.min.js"></script>
+<script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./index_files/aws-sdk-2.2.35.min.js"></script>
+<script src="./index_files/amazon-cognito.min.js"></script>
+<script type="text/javascript" src="js/class.js"></script>
+<script type="text/javascript" src="js/underscorec.js"></script>
+<script type="text/javascript" src="js/helpers.js"></script>
+<script type="text/javascript" src="js/marchingsquares.js"></script>
+<script type="text/javascript" src="js/objects/sky.js"></script>
+<script type="text/javascript" src="js/objects/firems.js"></script>
+<script type="text/javascript" src="js/domutil.js"></script>
+<script type="text/javascript" src="js/scene.js"></script>
+<script type="text/javascript" src="js/frameloop.js"></script>
+<script type="text/javascript" src="js/firesimulation.js"></script>
+<script src="./index_files/lightbulb.js"></script>
+<script src="./index_files/mqttws31.js"></script>
+<script src="./index_files/websocket.js"></script>
+<script type="text/javascript">
+main("mycanvas");
+</script>
+</body>
+</html>
